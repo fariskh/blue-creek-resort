@@ -9,6 +9,7 @@
     <title>Blue Creek Resort</title>
     <link rel="icon" href="logo.svg" sizes="any" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css" media="screen">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <script class="u-script" type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="scripts.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.15.11, nicepage.com">
@@ -1573,11 +1574,6 @@
     <meta property="og:title" content="home">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://website86266h.nicepage.io/home.html">
-<style>
-  .booknow:active,.booknow:hover,.booknow:focus{
-    box-shadow: 0 0 0 .2rem rgba(40,167,69,.5);
-  }
-</style>
 </head>
   <body class="u-body u-xl-mode" data-lang="en">
     <div style="
@@ -1591,10 +1587,16 @@
     background-color: rgba(127.5,127.5,127.5,0.5);
     transform-origin: 95% 5%;
     " id="contactwindow">
-      <p onclick="$('#contactwindow').css('transform','scale(0)');" align="right" style="
+      <p onclick="
+        $('#contactwindow').css('transform','scale(0)');
+        $('.booknow').css('transform','scale(1)');
+        " align="right" style="
         position: absolute;
         width: 100%;
         padding-right: 25px;
+        cursor: pointer;
+        color: white;
+        font-size: 40px;
       " class="material-icons">&#xe5cd;</p>
       <div style="display: table;width: 100%;height: 100%;">
         <div style="
@@ -1617,39 +1619,27 @@
     z-index: 1;
     display: flex;
     ">
-      <div style="
-        height: 75px;
-        width: 75px;
-        margin-left: 25px;
-        background-image: url(logo.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-      " >
-      </div>
+      <a href="#">
+        <div style="
+          height: 100px;
+          width: 110px;
+          margin-left: 15px;
+          background-image: url(logo.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+        " >
+        </div>
+      </a>
       <div style="margin-left:auto;display: flex;">
-        <button onclick="$('#contactwindow').css('transform','scale(1)');" class="booknow" style="
+        <button onclick="
+        $('#contactwindow').css('transform','scale(1)');
+        $('.booknow').css('transform','scale(0)');
+        " class="booknow btn btn-success" style="
         margin-top: auto;
         margin-bottom: auto;
         margin-right: 20px;
-        color: #fff;
-        background-color: #28a745;
-        border-color: #28a745;
-        display: inline-block;
-        font-weight: 400;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        border: 1px solid transparent;
-        padding: 0.375rem 0.75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: 0.25rem;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+        transition:500ms;
             ">Book Now</button>
       </div>
     </div>
@@ -2020,7 +2010,7 @@
       </div>
     </section>
     <section class="u-align-center u-clearfix u-image u-shading u-section-10" id="carousel_848a" data-image-width="1620" data-image-height="1080">
-      <div class="u-clearfix u-sheet u-sheet-1 totarget">
+      <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-text u-text-default u-text-1">Contact Us</h2>
         <p class="u-text u-text-2">You can expect great wildlife photography opportunities and the chance to travel with a group of like-minded individuals who love the great outdoors.</p>
         <div class="u-form u-form-1">
@@ -2061,10 +2051,29 @@
       </div>
     </section>
     
+    <section class="u-align-center u-clearfix u-image u-shading u-section-10" id="carousel_848a" data-image-width="1620" data-image-height="1080" style="background: none;">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1" style="
+          color: #bfbfbf;
+          width: 100%;
+          ">Locate Us</h2>
+        <div class="u-form u-form-1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d244.33693152106474!2d76.17550869384137!3d11.523791383866893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1704779281342!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <br>
+          <a href="#">
+            <button class="btn btn-primary" style="
+            margin-bottom: 25px;
+            font-size: 24px;
+            border-radius: 10px 10px 20px 20px;
+            "><text class="material-icons">&#xe52e;</text> Get Direction</button>
+          </a>
+        </div>
+      </div>
+    </section>
     
 <footer class="u-align-center-sm u-align-center-xs u-black u-clearfix u-footer" id="sec-1d45"><div class="u-clearfix u-sheet u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="//capp.nicepage.com/1a3b34123e5a23fa2ec02642c3f27a25764372fe/images/default-logo.png" class="u-logo-image u-logo-image-1">
+        <a href="#" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
+          <img src="logo.svg" class="u-logo-image u-logo-image-1">
         </a>
         <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
           <div class="u-gutter-0 u-layout">
@@ -2130,5 +2139,6 @@
         <span>Website Builder Software</span>
       </a>. 
     </section> -->
+
   </body>
 </html>
